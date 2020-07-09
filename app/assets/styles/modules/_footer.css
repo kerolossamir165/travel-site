@@ -1,0 +1,18 @@
+.site-footer {
+  background-color: $mainColor;
+  color: #fff;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 300;
+  &__text {
+    display: block;
+    margin-bottom: 1rem;
+
+    @mixin atMeduim {
+      display: inline;
+      margin-bottom: 0;
+      margin-right: 2rem;
+    }
+  }
+}

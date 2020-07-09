@@ -1,5 +1,6 @@
 @import "normalize.css";
 @import "/base/_variables.css";
+
 @import "/base/_base.css";
 @import "/base/_mixin.css";
 @import "/base/_wrapper.css";
@@ -12,3 +13,4 @@
 @import "./modules/_section-title.css";
 @import "./modules/_feature-items.css";
 @import "./modules/_testmonials.css";
+@import "./modules/_footer.css";
