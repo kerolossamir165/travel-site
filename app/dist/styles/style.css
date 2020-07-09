@@ -567,9 +567,21 @@ a {
     display: table;
   }
 
-/* & > div {
-    text-align: center;
-  } */
+.row--gutters {
+    margin-right: -65px;
+  }
+
+.row--gutters-large {
+    margin-right: -100px;
+  }
+
+.row--gutters > div {
+    padding-right: 65px;
+  }
+
+.row--gutters-large > div {
+    padding-right: 100px;
+  }
 
 .row__maring-mid {
     margin-bottom: 2rem;
@@ -578,7 +590,7 @@ a {
 @media screen and (min-width: 800px) {
 
 .row {
-    margin-right: -6.5rem
+    /* margin-right: -6.5rem; */
 }
 
     .row > div {
@@ -605,21 +617,99 @@ a {
       float: left;
       width: 60%;
     }
+
+    .row .col-med-6 {
+      float: left;
+      width: 50%;
+    }
   }
 
-.content-container > p {
-    font-weight: 200;
-    line-height: 1.6;
+.content-container p {
+    font-weight: 300;
+    line-height: 2;
     font-size: 1.3rem;
   }
 
 @media screen and (min-width: 530px) {
 
-.content-container > p {
+.content-container p {
       font-size: 1.8rem
   }
   }
 
 .content-container a {
     font-weight: 500;
+  }
+
+.section__title {
+  font-size: 4rem;
+  font-weight: 200;
+  text-align: center;
+}
+
+@media screen and (min-width: 530px) {
+
+.section__title {
+    font-size: 6rem
+}
+  }
+
+.section__title-img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+@media screen and (min-width: 530px) {
+
+.section__title-img {
+      display: inline-block;
+      margin-right: 1rem;
+      margin-left: 0;
+      margin-bottom: 0
+  }
+  }
+
+.feature-item {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+/* text-align: center; */
+
+@media screen and (min-width: 530px) {
+
+.feature-item {
+    padding-left: 94px
+    /* text-align: initial; */
+}
+  }
+
+.feature-item-img {
+    margin: 0 auto;
+    display: block;
+  }
+
+@media screen and (min-width: 530px) {
+
+.feature-item-img {
+      position: absolute;
+      left: 0
+  }
+  }
+
+.feature-item-title {
+    font-size: 2.6rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+@media screen and (min-width: 530px) {
+
+.feature-item-title {
+      text-align: initial;
+      font-size: 3rem
+  }
   }
