@@ -1,0 +1,42 @@
+.testmonials {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: $mainColor;
+  padding: 0rem 2rem 1rem 2rem;
+  position: relative;
+  margin-bottom: 98px;
+  &-last {
+    margin-bottom: 0;
+  }
+
+  @mixin atMeduim {
+    margin-bottom: 0rem;
+  }
+
+  &__img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    margin: 0 auto -80px auto;
+    position: relative;
+    top: -80px;
+    overflow: hidden;
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: $mainColor;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  &__subtitle {
+    font-size: 1.5rem;
+    color: $orangeColor;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+
+  /* &__description{
+      font-size:
+  } */
+}

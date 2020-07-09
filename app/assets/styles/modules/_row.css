@@ -5,6 +5,10 @@
     margin-right: -65px;
   }
 
+  &-padding {
+    padding-top: 8rem;
+  }
+
   &--gutters-large {
     margin-right: -100px;
   }
@@ -52,6 +56,17 @@
     .col-med-6 {
       float: left;
       width: 50%;
+    }
+  }
+
+  &-flex {
+    @mixin atMeduim {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
     }
   }
 }
