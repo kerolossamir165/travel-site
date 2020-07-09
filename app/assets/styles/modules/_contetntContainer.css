@@ -1,7 +1,7 @@
 .content-container {
-  & > p {
-    font-weight: 200;
-    line-height: 1.6;
+  p {
+    font-weight: 300;
+    line-height: 2;
     font-size: 1.3rem;
     @mixin atSmall {
       font-size: 1.8rem;
