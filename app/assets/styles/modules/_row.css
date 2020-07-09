@@ -1,0 +1,40 @@
+.row {
+  @mixin clearFix;
+
+  /* & > div {
+    text-align: center;
+  } */
+
+  &__maring-mid {
+    margin-bottom: 2rem;
+  }
+
+  @mixin atMeduim {
+    margin-right: -6.5rem;
+
+    & > div {
+      padding-right: 6.5rem;
+      text-align: initial;
+    }
+
+    &__maring-mid {
+      margin-bottom: 0rem;
+    }
+    .col-med-4 {
+      float: left;
+      width: 33.33%;
+    }
+    .col-med-8 {
+      float: left;
+      width: 66.666%;
+    }
+    .col-med-4-large {
+      float: left;
+      width: 40%;
+    }
+    .col-med-8-small {
+      float: left;
+      width: 60%;
+    }
+  }
+}
