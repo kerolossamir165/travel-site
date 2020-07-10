@@ -4,6 +4,7 @@ class MobelMenu {
     this.menuIcon = $(".site-header__menu-icon");
     this.siteHeader = $(".site-header");
     this.menuContent = $(".site-header__menu-content");
+    this.events();
   }
 
   events() {
@@ -11,7 +12,6 @@ class MobelMenu {
   }
 
   toggle() {
-    console.log(this.menuContent);
     this.menuContent.toggleClass("site-header__menu-content-visible");
     this.siteHeader.toggleClass("site-header-is-expanded");
     this.menuIcon.toggleClass("site-header__menu-icon-hamburger");
