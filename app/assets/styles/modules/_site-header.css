@@ -1,0 +1,129 @@
+.site-header {
+  @mixin clearFix;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+
+  transition: background 0.3s ease-out;
+  @mixin atMeduim {
+    background-color: rgba($mainColor, 0.5);
+  }
+
+  &-is-expanded {
+    background-color: rgba($mainColor, 0.6);
+  }
+
+  &__menu-content {
+    /* display: none; */
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: -555;
+    padding-top: 120px;
+    text-align: center;
+    transform: scale(1.56);
+    transition: all 0.3s ease-out;
+
+    @mixin atMeduim {
+      position: relative;
+      padding-top: 0;
+      display: block;
+      opacity: 1;
+      transform: scale(1);
+
+      z-index: 1;
+      visibility: visible;
+    }
+
+    &-visible {
+      /* display: block; */
+      opacity: 1;
+      z-index: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+  }
+
+  &__btn {
+    float: none;
+    /* margin-top: 0.7rem; */
+    @mixin atMeduim {
+      float: right;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    background: #325774;
+    padding: 2rem 3rem 1rem;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+
+    @mixin atMeduim {
+      left: 10%;
+      /* left: 0; */
+
+      transform: translateX(0%);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .visuly-hidin {
+    text-indent: -9999px;
+    display: inline-block;
+  }
+
+  &__menu-icon {
+    width: 2rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: #fff;
+    z-index: 10000;
+    transition: all 0.2s;
+
+    &:after,
+    &:before {
+      content: "";
+      width: 2rem;
+      height: 0.2rem;
+      background: #fff;
+      left: 0;
+      position: absolute;
+      transition: all 0.5s;
+    }
+
+    &:after {
+      top: 0.7rem;
+      transform-origin: 100% 100%;
+    }
+    &:before {
+      top: -0.7rem;
+      transform-origin: 100% 0%;
+    }
+
+    @mixin atMeduim {
+      display: none;
+    }
+  }
+
+  &__menu-icon-hamburger {
+    background: transparent;
+
+    &:after {
+      transform: rotate(45deg);
+    }
+    &:before {
+      transform: rotate(-45deg);
+    }
+  }
+}

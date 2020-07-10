@@ -458,10 +458,18 @@ a {
     transform: translate(-50%, -50%);
     color: #2f5572;
     width: 100%;
+    padding-top: 10.8rem;
+  }
+
+@media screen and (min-width: 800px) {
+
+.large-hero__content {
+      padding-top: 6rem
+  }
   }
 
 .large-hero__title {
-    font-size: 4.2rem;
+    font-size: 4rem;
     font-weight: 300;
     color: #2f5572;
     margin: 0;
@@ -489,7 +497,7 @@ a {
 
 .large-hero__description {
     color: #fff;
-    font-size: 2.6rem;
+    font-size: 1.6rem;
     max-width: 48rem;
     font-weight: 200;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
@@ -831,3 +839,232 @@ a {
       margin-right: 2rem
   }
   }
+
+.primary__nav {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 800px) {
+
+.primary__nav {
+    margin-top: 0
+}
+  }
+
+.primary__nav--right {
+    float: none;
+  }
+
+@media screen and (min-width: 800px) {
+
+.primary__nav--right {
+      float: right
+  }
+  }
+
+.primary__nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+.primary__nav ul::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.primary__nav li {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+@media screen and (min-width: 800px) {
+
+.primary__nav li {
+      margin-right: 2rem;
+      float: left
+  }
+  }
+
+.primary__nav li:last-child {
+    margin-right: 0;
+  }
+
+@media screen and (min-width: 800px) {
+
+.primary__nav li:last-child {
+      margin-right: 2rem
+  }
+  }
+
+.primary__nav a {
+    display: inline-block;
+    color: #fff;
+    padding: 1.2rem 3rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background: rgba(47,85,114, 0.3);
+  }
+
+@media screen and (min-width: 800px) {
+
+.primary__nav a {
+      background: transparent
+  }
+  }
+
+.site-header::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+@media screen and (min-width: 800px) {
+
+.site-header {
+    background-color: rgba(47,85,114, 0.5)
+}
+  }
+
+.site-header {
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2;
+
+  transition: background 0.3s ease-out;
+}
+
+.site-header-is-expanded {
+    background-color: rgba(47,85,114, 0.6);
+  }
+
+.site-header__menu-content {
+    /* display: none; */
+
+    opacity: 0;
+    visibility: hidden;
+    z-index: -555;
+    padding-top: 120px;
+    text-align: center;
+    transform: scale(1.56);
+    transition: all 0.3s ease-out;
+  }
+
+@media screen and (min-width: 800px) {
+
+.site-header__menu-content {
+      position: relative;
+      padding-top: 0;
+      display: block;
+      opacity: 1;
+      transform: scale(1);
+
+      z-index: 1;
+      visibility: visible
+  }
+  }
+
+.site-header__menu-content-visible {
+      /* display: block; */
+      opacity: 1;
+      z-index: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+
+.site-header__btn {
+    float: none;
+  }
+
+/* margin-top: 0.7rem; */
+
+@media screen and (min-width: 800px) {
+
+.site-header__btn {
+      float: right
+  }
+  }
+
+.site-header__img {
+    position: absolute;
+    background: #325774;
+    padding: 2rem 3rem 1rem;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+  }
+
+@media screen and (min-width: 800px) {
+
+.site-header__img {
+      left: 10%;
+      /* left: 0; */
+
+      transform: translateX(0%)
+  }
+  }
+
+.site-header__img img {
+      width: 100%;
+    }
+
+.site-header .visuly-hidin {
+    text-indent: -9999px;
+    display: inline-block;
+  }
+
+.site-header__menu-icon {
+    width: 2rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    background: #fff;
+    z-index: 10000;
+    transition: all 0.2s;
+  }
+
+.site-header__menu-icon:after,
+    .site-header__menu-icon:before {
+      content: "";
+      width: 2rem;
+      height: 0.2rem;
+      background: #fff;
+      left: 0;
+      position: absolute;
+      transition: all 0.5s;
+    }
+
+.site-header__menu-icon:after {
+      top: 0.7rem;
+      transform-origin: 100% 100%;
+    }
+
+.site-header__menu-icon:before {
+      top: -0.7rem;
+      transform-origin: 100% 0%;
+    }
+
+@media screen and (min-width: 800px) {
+
+.site-header__menu-icon {
+      display: none
+  }
+  }
+
+.site-header__menu-icon-hamburger {
+    background: transparent;
+  }
+
+.site-header__menu-icon-hamburger:after {
+      transform: rotate(45deg);
+    }
+
+.site-header__menu-icon-hamburger:before {
+      transform: rotate(-45deg);
+    }

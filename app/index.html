@@ -20,16 +20,26 @@
   </head>
 
   <body>
-    <header>
-      <img src="assets/images/icons/clear-view-escapes.svg" />
-      <a class="btn blue-btn" href="#">Get in Touch</a>
-      <nav>
-        <ul>
-          <li><a href="#our-beginning">Our Beginning</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-        </ul>
-      </nav>
+    <header class="site-header">
+      <div class="wrapper">
+        <div class="site-header__img">
+          <img src="assets/images/icons/clear-view-escapes.svg" />
+          <span class="visuly-hidin">Clear View Escapes</span>
+        </div>
+        <div class="site-header__menu-icon"></div>
+        <div class="site-header__menu-content">
+          <div class="site-header__btn">
+            <a class="btn blue-btn" href="#">Get in Touch</a>
+          </div>
+          <nav class="primary__nav primary__nav--right">
+            <ul>
+              <li><a href="#our-beginning">Our Beginning</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
 
     <div class="large-hero">
@@ -336,5 +346,6 @@
     <div class="modal__close">X</div>
   </div>
   This is the end of the "modal" reference HTML -->
+    <script src="dist/scripts/app.js"></script>
   </body>
 </html>

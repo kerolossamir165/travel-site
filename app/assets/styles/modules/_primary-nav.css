@@ -1,0 +1,48 @@
+.primary__nav {
+  list-style: none;
+  margin-top: 2rem;
+  @mixin atMeduim {
+    margin-top: 0;
+  }
+  &--right {
+    float: none;
+
+    @mixin atMeduim {
+      float: right;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    @mixin clearFix;
+  }
+  li {
+    display: inline-block;
+    margin-right: 1rem;
+    @mixin atMeduim {
+      margin-right: 2rem;
+      float: left;
+    }
+  }
+
+  li:last-child {
+    margin-right: 0;
+    @mixin atMeduim {
+      margin-right: 2rem;
+    }
+  }
+
+  a {
+    display: inline-block;
+    color: #fff;
+    padding: 1.2rem 3rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    background: rgba($mainColor, 0.3);
+
+    @mixin atMeduim {
+      background: transparent;
+    }
+  }
+}
