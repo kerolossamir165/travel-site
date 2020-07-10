@@ -925,11 +925,15 @@ a {
 .site-header {
     background-color: rgba(47,85,114, 0.5)
 }
+
+    .site-header-dark {
+      background-color: rgba(47,85,114, 1);
+    }
   }
 
 .site-header {
   padding: 10px 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;

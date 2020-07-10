@@ -1,7 +1,7 @@
 .site-header {
   @mixin clearFix;
   padding: 10px 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -11,6 +11,10 @@
   transition: background 0.3s ease-out;
   @mixin atMeduim {
     background-color: rgba($mainColor, 0.5);
+
+    &-dark {
+      background-color: rgba($mainColor, 1);
+    }
   }
 
   &-is-expanded {
