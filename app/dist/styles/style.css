@@ -660,13 +660,13 @@ a {
 
 @media screen and (min-width: 800px) {
 
-.row-flex {
+.flexbox .row-flex {
       display: -ms-flexbox;
       display: flex
   }
   }
 
-.row-flex > div {
+.flexbox .row-flex > div {
       float: none;
       display: -ms-flexbox;
       display: flex;

@@ -59,7 +59,7 @@
     }
   }
 
-  &-flex {
+  .flexbox &-flex {
     @mixin atMeduim {
       display: flex;
     }

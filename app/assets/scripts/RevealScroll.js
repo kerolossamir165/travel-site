@@ -4,9 +4,11 @@ class Reveal {
   constructor(select, offset) {
     this.item = select;
     console.log(select);
+    this.lazy = $(".lazyload");
     this.offSet = offset;
     this.hide();
     this.show();
+    this.refresh();
   }
   hide() {
     this.item.addClass("reveal");
@@ -24,6 +26,11 @@ class Reveal {
         },
         offset: that.offSet,
       });
+    });
+  }
+  refresh() {
+    this.lazy.on("load", function () {
+      Waypoint.refreshAll();
     });
   }
 }
