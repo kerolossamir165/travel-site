@@ -2,7 +2,7 @@ let path = require("path");
 
 module.exports = {
   entry: {
-    App: "./app/assets/scripts/script.js",
+    App: "./app/assets/scripts/App.js",
     Vendors: "./app/assets/scripts/Vendors.js",
   },
   output: {
